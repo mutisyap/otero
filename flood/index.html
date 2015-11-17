@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>floods</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/floods.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <div class="container">
+	<div class="dropdown">
+      <div class="masthead">
+        <h3 class="text-muted">Floods</h3>
+        <ul class="nav nav-justified">
+        <!--  <li ><a href="#">Home</a></li> -->
+          <li ><a href="#">Central</a>
+			<ul class="dropdowns">
+				<li><a href="#">Nyandarua</a></li>
+				<li><a href="#">Nyeri</a></li>
+				<li><a href="#">Kirinyaga</a></li>
+				<li><a href="#">Murang'a</a></li>
+				<li><a href="#">Kiambu</a></li>
+			</ul>
+		  </li>
+          <li ><a href="#">Coast</a>
+			<ul class="dropdowns">
+				<li><a href="#">Mombasa</a></li>
+				<li><a href="#">Kwale</a></li>
+				<li><a href="#">Kilifi</a></li>
+				<li><a href="#">Tana River</a></li>
+				<li><a href="#">Lamu</a></li>
+				<li><a href="#">Taita Taveta</a></li>
+			</ul>
+		  </li>
+          <li ><a href="#">Eastern</a>
+			<ul class="dropdowns">
+				<li><a href="#">Marsabit</a></li>
+				<li><a href="#">Isiolo</a></li>
+				<li><a href="#">Meru</a></li>
+				<li><a href="#">Tharaka Nithi</a></li>
+				<li><a href="#">Embu</a></li>
+				<li><a href="#">Kitui</a></li>
+				<li><a href="#">Machakos</a></li>
+				<li><a href="#">Makueni</a></li>
+			</ul>
+		  </li>
+          <li class="activeg"><a href="nairobi.html">Nairobi</a>
+			<ul class="dropdowns">
+				<li><a href="#">Ngong Road</a></li>
+				<li><a href="#">Lang'ata Road</a></li>
+				<li><a href="#">River Road</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">North-Eastern</a>
+		  <ul class="dropdowns">
+				<li><a href="#">Garissa</a></li>
+				<li><a href="#">Wajir</a></li>
+				<li><a href="#">Mandera</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Nyanza</a>
+		  <ul class="dropdowns">
+				<li><a href="#">Nyamira</a></li>
+				<li><a href="#">Kisii</a></li>
+				<li><a href="#">Migori</a></li>
+				<li><a href="#">Homa Bay</a></li>
+				<li><a href="#">Kisumu</a></li>
+				<li><a href="#">Siaya</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Rift Valley</a>
+		  <ul class="dropdowns">
+				<li><a href="#">Turkana</a></li>
+				<li><a href="#">West Pokot</a></li>
+				<li><a href="#">Samburu</a></li>
+				<li><a href="#">Trans Nzoia</a></li>
+				<li><a href="#">Uasin Gishu</a></li>
+				<li><a href="#">Elgeyo-Marakwet</a></li>
+				<li><a href="#">Nandi</a></li>
+				<li><a href="#">Baringo</a></li>
+				<li><a href="#">Laikipia</a></li>
+				<li><a href="#">Nakuru</a></li>
+				<li><a href="#">Narok</a></li>
+				<li><a href="#">Kajiado</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Western</a>
+		  	<ul class="dropdowns">
+				<li><a href="#">kakamega</a></li>
+				<li><a href="#">Vihiga</a></li>
+				<li><a href="#">Bungoma</a></li>
+				<li><a href="#">Busia</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </div>
+	  </div>
+      <!-- Jumbotron -->
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for release -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div style="display: none;">
+                <img data-u="image" src="img/flood1.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/flood2.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/flood3.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/flood4.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+    </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2><strong>About the System</strong></h2>
+          <p class="text-danger">
+            This system provides information about flooded areas and bridges.
+          </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Example</h2>
+          <p>
+            We use Nairobi province and Ngong road as out case study.
+            </p>
+            <p>
+
+            </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Acknowledgements</h2>
+          <p>
+		  All friends and relatives who have helped me through. To my supervisor. thank you all.
+		  </p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Otero Felix</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
